@@ -17,6 +17,7 @@ class HomeProvider with ChangeNotifier {
 
   Future<void> fetchMoviesListApi() async {
     setMoviesList(ApiResponse.loading());
+    // Call Function from the Repository Class
     await HomeRepository.homeRepositoryInstance.getMovieList().then((value) {
       AppLogger.logger.d("fetchMoviesListApi: ${value!.data!.toJson()}");
       setMoviesList(ApiResponse.completed(value));

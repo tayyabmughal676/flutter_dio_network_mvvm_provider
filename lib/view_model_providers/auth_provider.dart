@@ -17,6 +17,7 @@ class AuthProvider with ChangeNotifier {
   Future<void> loginApi(
       {required dynamic data, required BuildContext context}) async {
     setLoading(isLoading: true);
+    // Call Function from the Repository Class
     await AuthRepository.authRepositoryInstance
         .authLoginApi(data: data, url: AppNetworkUrls.loginEndPint)
         .then((value) {
