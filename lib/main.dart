@@ -3,6 +3,14 @@ import 'package:flutter_network/screens/home_screen/home_screen.dart';
 import 'package:flutter_network/view_model_providers/home_provider.dart';
 import 'package:provider/provider.dart';
 
+//*
+// [Flutter] Version: 3.0.1
+// [Developer]: Tayyab Mughal a.k.a Woda Toki
+// [Upwork]: https://www.upwork.com/freelancers/~01d478bbabdfa2e861
+// [Fiverr]: https://www.fiverr.com/wodatoki
+// [Github]: mailto:tayyabmughal676@gmail.com
+// *//
+
 void main() {
   runApp(const MyApp());
 }
