@@ -5,12 +5,15 @@ import 'package:flutter_network/network_service/models/movie_response.dart';
 import 'package:flutter_network/network_service/network_api_service.dart';
 
 class HomeRepository {
+  // Generate Instance
   static final HomeRepository _homeRepository = HomeRepository();
 
+  // Get Instance of the class
   static HomeRepository get homeRepositoryInstance => _homeRepository;
 
   Future<PackageResponse?> getMovieList() async {
     try {
+      // Request Body
       final body = {
         "code": "",
         "date_from": "",
@@ -21,7 +24,13 @@ class HomeRepository {
         "offset": 0
       };
 
-      final headers = {"Content-Type": "application/json"};
+      // Demo JSON-WEB-TOKEN JWT
+      var userToken = "sdfghghgfdsfggf";
+      // Request Header
+      final headers = {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer $userToken"
+      };
 
       dynamic response = await NetworkApiService.apiServicesInstance
           .callPostApiResponse(

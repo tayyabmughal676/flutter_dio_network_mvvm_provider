@@ -152,6 +152,7 @@ class NetworkApiService extends BaseApiServices {
     }
   }
 
+  // Check Response Status and Return Data in Success
   dynamic returnSuccessResponse(Response response) {
     switch (response.statusCode) {
       case 200:
@@ -174,6 +175,7 @@ class NetworkApiService extends BaseApiServices {
     }
   }
 
+  // Check Response Status and Return Data in Failure
   dynamic returnErrorResponse(Response response) {
     switch (response.statusCode) {
       case 200:

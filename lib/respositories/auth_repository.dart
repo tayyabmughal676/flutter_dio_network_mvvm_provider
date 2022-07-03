@@ -2,8 +2,10 @@ import 'package:flutter_network/network_service/app_logger.dart';
 import 'package:flutter_network/network_service/network_api_service.dart';
 
 class AuthRepository {
+  // Generate Instance
   static final AuthRepository _authRepository = AuthRepository();
 
+  // Get Instance of the class.
   static AuthRepository get authRepositoryInstance => _authRepository;
 
   Future<dynamic> authLoginApi(
