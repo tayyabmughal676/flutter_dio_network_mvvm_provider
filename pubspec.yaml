@@ -41,7 +41,13 @@ dependencies:
   another_flushbar: any
   fluttertoast: any
   shared_preferences: any
-
+  #  Firebase
+  firebase_core: ^1.19.1
+  firebase_messaging: ^11.4.4
+  #  For Local Notification
+  flutter_local_notifications: ^9.7.0
+  http: ^0.13.4
+  timezone: any
 
 dev_dependencies:
   flutter_test:
