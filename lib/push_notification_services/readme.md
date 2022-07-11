@@ -1,4 +1,4 @@
-### in main.dart
+# in main.dart
 
 ```dart
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -9,7 +9,7 @@ debugPrint('Handling a background message ${message.messageId}');
 }
 ```
 
-### inside the main.dart -> app
+# Inside the main.dart -> app
 ```dart
 FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
