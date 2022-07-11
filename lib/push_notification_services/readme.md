@@ -1,4 +1,4 @@
-# in main.dart
+# In main.dart
 
 ```dart
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
