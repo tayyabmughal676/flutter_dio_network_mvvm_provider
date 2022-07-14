@@ -42,13 +42,15 @@ dependencies:
   fluttertoast: any
   shared_preferences: any
   #  Firebase
-  firebase_core: ^1.19.1
-  firebase_messaging: ^11.4.4
+  firebase_core: any
+  firebase_messaging: any
   #  For Local Notification
   flutter_local_notifications: ^9.7.0
   http: ^0.13.4
   timezone: any
   json_annotation: ^4.6.0
+  #  For Freezed Annotation -> Model Creating
+  freezed_annotation: ^2.0.3
 
 dev_dependencies:
   flutter_test:
@@ -60,8 +62,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.1
-  json_serializable: ^6.3.1
-  build_runner: ^2.1.11
+
+  # For build-runner -> freezed -> json_serializable -> Model Creating
+  build_runner: any
+  freezed: any
+  json_serializable: any
 
 
 
