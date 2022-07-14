@@ -48,9 +48,10 @@ dependencies:
   flutter_local_notifications: ^9.7.0
   http: ^0.13.4
   timezone: any
-  json_annotation: ^4.6.0
-  #  For Freezed Annotation -> Model Creating
+
+  #  For Freezed, json Annotation -> Model Creating
   freezed_annotation: ^2.0.3
+  json_annotation: ^4.6.0
 
 dev_dependencies:
   flutter_test:
@@ -64,10 +65,10 @@ dev_dependencies:
   flutter_lints: ^2.0.1
 
   # For build-runner -> freezed -> json_serializable -> Model Creating
+  # Run this command -> flutter pub run build_runner build
   build_runner: any
   freezed: any
   json_serializable: any
-
 
 
 # For information on the generic Dart part of this file, see the
