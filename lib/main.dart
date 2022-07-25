@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_network/screens/home_screen/home_screen.dart';
+import 'package:flutter_network/view_model_providers/auth_provider.dart';
 import 'package:flutter_network/view_model_providers/home_provider.dart';
+import 'package:flutter_network/view_model_providers/pref_provider.dart';
 import 'package:provider/provider.dart';
 
 //*
@@ -24,6 +26,14 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<HomeProvider>(
           create: (_) => HomeProvider(),
+          lazy: true,
+        ),
+        ChangeNotifierProvider<AuthProvider>(
+          create: (_) => AuthProvider(),
+          lazy: true,
+        ),
+        ChangeNotifierProvider<PrefProvider>(
+          create: (_) => PrefProvider(),
           lazy: true,
         ),
       ],
